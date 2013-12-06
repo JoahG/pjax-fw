@@ -11,7 +11,7 @@ $(document).ready(function(){
 		});
 	}
 
-	$("a[href^=_]").click(function(e){
+	$(document).on("a[href^=_]", 'click', function(e){
 		renderPartial($(this).href.substr(1,$(this).href.length-1));
 		e.preventDefault();
 	});
