@@ -11,7 +11,8 @@
 						dataType: 'html',
 						type: 'get',
 						success: function(d) {
-							$("body").html(d)
+							html = jQuery.parseHTML(d);
+							$("body").html(html.find('body'))
 							history.pushState($(this).href, '', $(this).href)
 						}
 					});
