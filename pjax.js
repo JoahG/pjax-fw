@@ -11,8 +11,8 @@ $(document).ready(function(){
 		});
 	}
 
-	$(document).on('click', 'a[href^=_]', function(e){
-		renderPartial($(this).href.substr(1,$(this).href.length-1));
+	$(document).on('click', 'a[data-remote]', function(e){
+		renderPartial($(this).attr('data-target'));
 		e.preventDefault();
 	});
 
