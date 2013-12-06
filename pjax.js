@@ -16,5 +16,5 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-	
+	renderPartial(window.location.href.split('/')[window.location.href.split('/').length-1])
 });
