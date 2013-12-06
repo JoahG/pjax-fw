@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	function renderPartial(n) {
 		$.ajax({
-			url: '/_'+n+'.html',
+			url: '_'+n+'.html',
 			dataType: 'html',
 			type: 'get',
 			success: function(d) {
 				$('body').html(d);
-				history.pushState('/'+n, '', '/'+n);
+				history.pushState(n, '', n);
 			}
 		});
 	}
