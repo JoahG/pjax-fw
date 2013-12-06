@@ -2,36 +2,11 @@
 <html>
 	<head>
 		<script src="jquery.min.js"></script>
-
-		<script>
-			$(document).ready(function(){
-				$("a").click(function(e){
-					$.ajax({
-						url: $(this).href,
-						dataType: 'html',
-						type: 'get',
-						success: function(d) {
-							html = jQuery.parseHTML(d);
-							$("body").html(html.find('body'))
-							history.pushState($(this).href, '', $(this).href)
-						}
-					});
-					e.preventDefault()
-				});
-			});
-		</script>
+		<script src="pjax.js"></script>
 
 		<title>Home</title>
 	</head>
 	<body>
-		<h1>My Website</h1>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		<div class="content container">
-			This is home!
-		</div>
+
 	</body>
 </html>
