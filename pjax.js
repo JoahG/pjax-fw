@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	function renderPartial(n) {
 		$.ajax({
-			url: '_'+n+'.html',
+			url: n+'.html',
 			dataType: 'html',
 			type: 'get',
 			success: function(d) {
@@ -16,5 +16,5 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-	renderPartial('index')
+	renderPartial('home')
 });
