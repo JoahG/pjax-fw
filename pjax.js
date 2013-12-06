@@ -1,14 +1,20 @@
 $(document).ready(function(){
-	$("a[href^=_]").click(function(e){
+	function renderPartial(n) {
 		$.ajax({
-			url: $(this).href,
+			url: '/_'+n+'.html',
 			dataType: 'html',
 			type: 'get',
 			success: function(d) {
-				html = $(d).find('.content.container').html();
-				history.pushState($(this).href, '', $(this).href)
+				$('body').html(d);
+				history.pushState('/'+n, '', '/'+n);
 			}
 		});
-		e.preventDefault()
+	}
+
+	$("a[href^=_]").click(function(e){
+		renderPartial($(this).href.substr(1,$(this).href.length-1));
+		e.preventDefault();
 	});
+
+	
 });
