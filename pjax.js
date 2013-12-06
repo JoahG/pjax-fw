@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	function renderPartial(n) {
 		$.ajax({
-			url: n+'.html',
+			url: 'partials/'+n+'.html',
 			dataType: 'html',
 			type: 'get',
 			success: function(d) {
