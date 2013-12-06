@@ -11,6 +11,17 @@ $(document).ready(function(){
 		});
 	}
 
+	function render(n) {
+		$.ajax({
+			url: '/index.html',
+			dataType: 'html',
+			type: 'get',
+			success: function(d) {
+				renderPartial(n);
+			}
+		});
+	}
+
 	$(document).on('click', 'a[data-remote]', function(e){
 		renderPartial($(this).attr('data-target'));
 		e.preventDefault();
