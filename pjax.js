@@ -5,7 +5,8 @@ $(document).ready(function(){
 			dataType: 'html',
 			type: 'get',
 			success: function(d) {
-				$('body').html(d);
+				$()
+				$('.content.container').html(d);
 				history.pushState(n, '', n);
 			}
 		});
