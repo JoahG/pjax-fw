@@ -1,3 +1,5 @@
+var replacedSelector = 'body';
+
 var renderPartial;
 var render;
 
@@ -8,7 +10,7 @@ $(document).ready(function(){
 			dataType: 'html',
 			type: 'get',
 			success: function(d) {
-				$('body').html(d);
+				$(replacedSelector).html(d);
 				history.pushState(n, '', n);
 			}
 		});
