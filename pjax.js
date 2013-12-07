@@ -17,6 +17,7 @@ $(document).ready(function(){
 			dataType: 'html',
 			type: 'get',
 			success: function(d) {
+				$('html').html(d)
 				renderPartial(n);
 			}
 		});
