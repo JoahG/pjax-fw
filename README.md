@@ -14,7 +14,7 @@ Include `pjax.js` in your app\*:
 	<script src="pjax.js"></script>
 ```
 
-\*The directory that `pjax.js` is stored does not affect the app.
+\*The directory that `pjax.js` is stored in does not affect the app.
 
 In the root directory, include an `index.html`, which includes the layout of your page. This will include the head, with any external file links. An example `index.html` can be seen [here](https://github.com/JoahG/pjax-fw/blob/gh-pages/index.html).
 
