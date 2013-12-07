@@ -28,8 +28,8 @@ $(document).ready(function(){
 		});
 	}
 
-	$(document).on('click', 'a[data-remote]', function(e){
-		renderPartial($(this).attr('data-target'));
+	$(document).on('click', 'a[data-remote-target]', function(e){
+		renderPartial($(this).attr('data-remote-target'));
 		e.preventDefault();
 	});
 
