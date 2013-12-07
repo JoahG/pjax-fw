@@ -33,7 +33,7 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-	if (document.location.pathname == '/pjax-fw/' || document.location.pathname == '/pjax-fw') {
+	if (document.location.pathname == '/pjax-fw/' || document.location.pathname == '/pjax-fw' || document.location.pathname == '/pjax-fw/index' || document.location.pathname == '/pjax-fw/index.html') {
 		renderPartial('home')
 	}
 });
