@@ -1,5 +1,8 @@
+var renderPartial;
+var render;
+
 $(document).ready(function(){
-	function renderPartial(n) {
+	renderPartial = function(n) {
 		$.ajax({
 			url: 'partials/'+n+'.html',
 			dataType: 'html',
@@ -11,7 +14,7 @@ $(document).ready(function(){
 		});
 	}
 
-	function render(n) {
+	render = function(n) {
 		$.ajax({
 			url: '/index.html',
 			dataType: 'html',
@@ -28,5 +31,7 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-	renderPartial('home')
+	if (document.location.pathname == '/pjax-fw/' || document.location.pathname == '/pjax-fw') {
+		renderPartial('home')
+	}
 });
