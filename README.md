@@ -22,7 +22,8 @@ In a `partials/` subdirectory, include the `body` of all the different pages you
 
 ```
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script><!-- Link to jQuery -->
+<title>TITLE OF THE PAGE</title> <!-- Title of page -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> <!-- Link to jQuery -->
 <script src="pjax.js"></script> <!-- Link to pjax.js -->
 <script>
 	$(document).ready(function(){
