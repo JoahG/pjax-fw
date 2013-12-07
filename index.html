@@ -1,22 +1,75 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-		<script src="js/pjax.js" type="text/javascript"></script>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-	</head>
-	<body>
-		<div id="body">
-			<h1>My Website</h1>
-			<ul>
-				<li><a data-remote-target='home' href="#!">Home</a></li>
-				<li><a data-remote-target='about' href="#!">About</a></li>
-				<li><a data-remote-target='contact' href="#!">Contact</a></li>
-			</ul>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<meta name="description" content="The home page of Cowboy Church on the Rock's website">
+	<meta name="author" content="Haley Higgins">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Habibi|Open+Sans:600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/pjax.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="super-container">
+		<div class="container sixteen columns">
+			<header class="top row">
+				<h1>
+					Cowboy Church on the Rock
+				</h1>
+			</header>
+			<nav class="row">
+				<ul class="container sixteen columns offset-by-one">
+					<li><a data-remote-target="home" href="#!"></li>
+					<li><a data-remote-target="staff" href="#!">Wranglers</a></li>
+					<li><a data-remote-target="faith" href="#!">Our Faith</a></li>
+					<li><a data-remote-target="events" href="#!">Events</a></li>
+					<li><a data-remote-target="video" href="#!">Video</a></li>
+					<li><a data-remote-target="photos" href="#!">Photos</a></li>
+					<li><a data-remote-target="contact" href="#!">Contact Us</a></li>
+				</ul>
+			</nav>
 			<div id="pjax">
-				<!-- this div will be filled with pjax-loaded content -->
+				<!-- This div will be filled with pjax-loaded content -->
 			</div>
-		</div>
-	</body>
+		</div><!-- container -->
+		<footer class="bottom">
+			<small>Web Design by 
+				<a href="http://gracenut.github.io" target="_blank">Haley Higgins</a> of 
+				<a href="http://www.popcornwebdev.com/" target="_blank">Popcorn Web Development</a>
+			</small>
+		</footer>
+	</div><!-- super-container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
 </html>
