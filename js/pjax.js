@@ -8,7 +8,7 @@ $(document).ready(function(){
 			dataType: 'html',
 			type: 'get',
 			success: function(d) {
-				$('.content.container').html(d);
+				$('body').html(d);
 				history.pushState(n, '', n);
 			}
 		});
