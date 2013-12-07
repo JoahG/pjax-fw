@@ -32,4 +32,4 @@ In a `partials/` subdirectory, include the `body` of all the different pages you
 
 ```
 
-You can also customize it so that a `div` is replaced instead of the entire `body` by editing the `replacedSelector` flag in `pjax.js`.
+You can also customize the `replacedSelector` flag in `pjax.js` to change what element is replaced in the app.

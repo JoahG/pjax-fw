@@ -1,4 +1,4 @@
-var replacedSelector = 'body';
+var replacedSelector = '#pjax';
 
 var renderPartial;
 var render;
