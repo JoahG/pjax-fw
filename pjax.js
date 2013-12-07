@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 	render = function(n) {
 		$.ajax({
-			url: '/index.html',
+			url: 'index.html',
 			dataType: 'html',
 			type: 'get',
 			success: function(d) {
