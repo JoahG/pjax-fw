@@ -36,3 +36,5 @@ In a `partials/` subdirectory, include the `body` of all the different pages you
 You can also customize the `replacedSelector` flag in `pjax.js` to change what element is replaced in the app.
 
 Any links you want to be loaded via pjax (intended for local pages) must have a `data-remote-target` attribute set to the partial name you want the link to point to. It's also recommended that you have an `href='#!'` to maintain semanticity.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/JoahG/pjax-fw/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
